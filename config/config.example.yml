@@ -1,0 +1,46 @@
+# Documentation-only configuration template.
+# The released R scripts read the corresponding environment variables directly;
+# they do not parse this YAML file.
+
+project:
+  root: "."
+
+tools:
+  psql_bin: "${MIMIC_PSQL_BIN}"
+  pgpass_file: "${MIMIC_PGPASS_FILE}"
+  pdftoppm_bin: "${PDFTOPPM_BIN}"
+
+mimic_database:
+  host: "${MIMIC_DB_HOST}"
+  port: "${MIMIC_DB_PORT}"
+  database: "${MIMIC_DB_NAME}"
+  user: "${MIMIC_DB_USER}"
+  required_version: "MIMIC-IV v3.0"
+
+eicu_database:
+  host: "${EICU_DB_HOST}"
+  port: "${EICU_DB_PORT}"
+  database: "${EICU_DB_NAME}"
+  user: "${EICU_DB_USER}"
+  required_version: "eICU-CRD v2.0"
+
+execution_gates:
+  r1b_cluster_robust: "R1B_EXECUTE_CLUSTER_ROBUST=YES"
+  r1b_landmark_audit: "R1B_EXECUTE_LANDMARK_AUDIT=YES"
+  r1b_separate_time_model_placeholder: "R1B_EXECUTE_TIME_VARYING_MODEL=SEPARATELY_AUTHORIZED"
+  r1c_time_varying: "R1C_EXECUTE_TIME_VARYING=YES"
+  r1c_replace_own_outputs: "R1C_REPLACE_OWN_OUTPUTS=YES"
+
+optional_in_memory_input_modes:
+  eicu_assignment: "STAGE10C1_INPUT_STDIN=1"
+  eicu_outcome: "STAGE10C2_INPUT_STDIN=1"
+
+safe_test_modes:
+  lpa_synthetic_self_test: "STAGE8A_SELF_TEST_ONLY=1"
+  lpa_transform_audit: "STAGE8A_TRANSFORM_AUDIT_ONLY=1"
+  lpa_profile_single_imputation: "STAGE8A_PROFILE_ONE=<1-10>"
+
+# Never place passwords, tokens, connection URIs, or real local paths in a
+# committed configuration file. Use process environment variables and an
+# approved local password file outside this repository.
+

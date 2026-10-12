@@ -1,0 +1,8 @@
+R version 4.6.0 (2026-04-24 ucrt)
+platform=x86_64-w64-mingw32
+mice=3.19.0
+survival=3.8.6
+rstpm2=1.7.1
+locale=C
+
+Recorded during R1A environment audit. The local R startup emitted warnings that C.UTF-8 locale components could not be set; the effective locale reported by R was C. No analysis was executed to create this record.

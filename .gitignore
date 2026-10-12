@@ -1,0 +1,60 @@
+# Clinical data and protected analysis objects
+data/**
+!data/
+!data/README.md
+*.rds
+*.RData
+*.rda
+*.parquet
+*.feather
+*.sas7bdat
+*.dta
+*.sav
+
+# Generated analysis outputs and logs
+outputs/**
+!outputs/
+*.log
+*.out
+*.tmp
+*.bak
+
+# Credentials and local configuration
+.Renviron
+.Rprofile
+config/*.yml
+!config/config.example.yml
+*.pgpass
+pgpass.conf
+*.pem
+*.key
+*.p12
+*.env
+
+# IDE/runtime state
+.Rhistory
+.RDataTmp
+.Rproj.user/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+Thumbs.db
+
+# Manuscripts, reviews, binaries, and local repositories are not release content
+*.doc
+*.docx
+*.pdf
+*.tif
+*.tiff
+*.png
+*.jpg
+*.jpeg
+*.ttf
+*.otf
+*.woff
+*.woff2
+.git/
+manuscript/
+Submission_package/
+Reviewer_Revision_*/

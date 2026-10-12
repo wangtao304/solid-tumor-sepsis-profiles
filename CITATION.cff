@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata in this file."
+title: "Source code for MIMIC cancer sepsis inflammatory-metabolic stress profile analyses"
+type: software
+version: "1.0.0"
+date-released: 2026-10-12
+license: MIT
+authors:
+  - family-names: Wang
+    given-names: Tao
+  - family-names: Li
+    given-names: Yanan
+repository-code: "https://github.com/wangtao304/solid-tumor-sepsis-profiles"
+url: "https://github.com/wangtao304/solid-tumor-sepsis-profiles/releases/tag/v1.0.0"
+abstract: >-
+  Audited SQL, R, and Python source supporting the revised manuscript submitted
+  to Frontiers in Cellular and Infection Microbiology (manuscript ID 1999181).
+  No clinical data, completed imputations, patient-level profile assignments,
+  or fitted model objects are distributed.
+keywords:
+  - MIMIC-IV
+  - eICU-CRD
+  - sepsis
+  - solid tumors
+  - latent profile analysis
+  - reproducible research
+identifiers:
+  - type: other
+    value: "Frontiers in Cellular and Infection Microbiology manuscript ID 1999181"
+    description: "Manuscript identifier; not a DOI"
+
