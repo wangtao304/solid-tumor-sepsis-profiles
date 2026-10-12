@@ -27,9 +27,9 @@ The analysis scripts use an externally supplied PostgreSQL command-line client. 
 
 ## Clinical databases and upstream schemas
 
-MIMIC-IV v3.0 and eICU-CRD v2.0 data are not included. Access requires the user's own authorization and compliance with applicable PhysioNet, database, and institutional terms.
+MIMIC-IV v3.1 and eICU-CRD v2.0 data are not included. Access requires the user's own authorization and compliance with applicable PhysioNet, database, and institutional terms.
 
-The SQL refers to externally materialized `mimiciv_derived` relations. Their upstream SQL definitions are not bundled. A bounded local review did not recover the historical MIMIC Code source snapshot or build record, so all 11 consumed relations are documented as `HISTORICAL_VERSION_UNRESOLVED`. MIMIC-IV v3.0 is not treated as a MIMIC Code version, and no current upstream revision is represented as the historical build. If future material adds or adapts upstream definitions, the exact upstream copyright and license notices must be retained.
+The SQL refers to externally materialized `mimiciv_derived` relations. Their upstream SQL definitions are not bundled. A bounded local review did not recover the historical MIMIC Code source snapshot or build record, so all 11 consumed relations are documented as `HISTORICAL_VERSION_UNRESOLVED`. MIMIC-IV v3.1 is not treated as a MIMIC Code version, and no current upstream revision is represented as the historical build. If future material adds or adapts upstream definitions, the exact upstream copyright and license notices must be retained.
 
 ## Project license boundary
 

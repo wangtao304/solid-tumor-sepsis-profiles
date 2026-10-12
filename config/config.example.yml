@@ -15,7 +15,7 @@ mimic_database:
   port: "${MIMIC_DB_PORT}"
   database: "${MIMIC_DB_NAME}"
   user: "${MIMIC_DB_USER}"
-  required_version: "MIMIC-IV v3.0"
+  required_version: "MIMIC-IV v3.1"
 
 eicu_database:
   host: "${EICU_DB_HOST}"

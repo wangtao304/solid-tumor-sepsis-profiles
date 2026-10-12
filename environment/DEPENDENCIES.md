@@ -9,7 +9,7 @@
 | survival | 3.8-6 | Survival objects and Kaplan-Meier calculations | Package DESCRIPTION; session summary reports 3.8.6 |
 | rstpm2 | 1.7.1 | Flexible parametric survival models | Frozen; R1B recorded binary built under R 4.6.1 |
 | PostgreSQL client/server | Not frozen | Controlled SQL streaming | Version limitation |
-| MIMIC-IV | v3.0 | Discovery database | Study definition |
+| MIMIC-IV | v3.1 | Discovery database | Study definition |
 | eICU-CRD | v2.0 | Transport-evaluation database | Study definition |
 
 The exact transitive R package versions were not frozen and no `renv.lock` exists. The release does not claim an exact binary environment reconstruction.

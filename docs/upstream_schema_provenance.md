@@ -2,9 +2,9 @@
 
 ## Status
 
-The released SQL was run against MIMIC-IV v3.0 and an externally materialized `mimiciv_derived` schema. A bounded local review of the available project records, referenced build materials, and version metadata did not recover the historical MIMIC Code checkout, an immutable commit or tag, the materialization date, or a module-level build manifest.
+The released SQL was run against MIMIC-IV v3.1 and an externally materialized `mimiciv_derived` schema. A bounded local review of the available project records, referenced build materials, and version metadata did not recover the historical MIMIC Code checkout, an immutable commit or tag, the materialization date, or a module-level build manifest.
 
-The historical build version for every consumed relation is therefore `HISTORICAL_VERSION_UNRESOLVED`. MIMIC-IV v3.0 is a database release and is not evidence of MIMIC Code v3.0.0. No current or later upstream revision is presented as the historically executed source. Historical local modifications cannot be assessed, and byte-for-byte or one-command reconstruction of the historical derived schema is not claimed.
+The historical build version for every consumed relation is therefore `HISTORICAL_VERSION_UNRESOLVED`. MIMIC-IV v3.1 is a database release and is not evidence of any MIMIC Code tag or commit, including MIMIC Code v3.0.0. No current or later upstream revision is presented as the historically executed source. Historical local modifications cannot be assessed, and byte-for-byte or one-command reconstruction of the historical derived schema is not claimed.
 
 ## Relations referenced by the released source
 

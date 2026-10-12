@@ -1,5 +1,11 @@
 # Publication-finalization changes
 
+## v1.0.1 documentation correction
+
+This documentation-only release corrects the stated clinical dataset version to MIMIC-IV v3.1, as confirmed by the authors. No analytical source code was changed. The previously released v1.0.0 is preserved. The historical build versions of the 11 upstream `mimiciv_derived` relations remain unresolved.
+
+The correction is limited to release documentation, citation/version metadata, the public configuration example, and descriptive source-to-result metadata. It does not modify SQL, R, or Python source, any statistical method, or any scientific result. MIMIC-IV v3.1 is the clinical database version and is not presented as a MIMIC Code tag or commit.
+
 ## Scope
 
 The v1.0.0 public tree was created from the audited 58-file `Code_Release_v1` candidate. Research SQL, R, Python analysis logic, configuration defaults already sanitized in the candidate, and the frozen code-to-result mapping were not changed during publication finalization.

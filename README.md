@@ -2,7 +2,9 @@
 
 ## Release status
 
-Version 1.0.0 is the audited source-code release supporting the revised manuscript submitted to *Frontiers in Cellular and Infection Microbiology* (manuscript ID 1999181). The repository is `https://github.com/wangtao304/solid-tumor-sepsis-profiles`, and the fixed release is tagged `v1.0.0`.
+Version 1.0.1 is the current audited source-code release supporting the revised manuscript submitted to *Frontiers in Cellular and Infection Microbiology* (manuscript ID 1999181). The repository is `https://github.com/wangtao304/solid-tumor-sepsis-profiles`, and the fixed release is tagged `v1.0.1`. The previously released v1.0.0 remains preserved.
+
+This documentation-only release corrects the stated clinical dataset version to MIMIC-IV v3.1, as confirmed by the authors. No analytical source code was changed. The previously released v1.0.0 is preserved. The historical build versions of the 11 upstream `mimiciv_derived` relations remain unresolved.
 
 The release contains the reviewed SQL, R, and Python source used to support the revised manuscript and Supplementary Material. It does not contain clinical records, patient-level exports, completed imputations, profile assignments, fitted model objects, database credentials, or frozen manuscript results.
 
@@ -23,11 +25,11 @@ The six profile-defining variables are white blood cell count, platelet count, l
 
 ## Data access and protected inputs
 
-The study used MIMIC-IV v3.0 and eICU Collaborative Research Database v2.0. Neither database is redistributed. Users must obtain their own credentialed access, comply with the applicable PhysioNet and institutional terms, and run database code only inside an approved environment.
+The study used MIMIC-IV v3.1 and eICU Collaborative Research Database v2.0. Neither database is redistributed. Users must obtain their own credentialed access, comply with the applicable PhysioNet and institutional terms, and run database code only inside an approved environment.
 
 The workflow also depends on locally materialized `mimiciv_derived` relations. A bounded local provenance review did not recover the historical MIMIC Code checkout, immutable commit or tag, materialization date, or build manifest. The historical build version for all 11 consumed relations is therefore `HISTORICAL_VERSION_UNRESOLVED`: `bg`, `blood_differential`, `charlson`, `chemistry`, `complete_blood_count`, `first_day_sofa`, `icustay_detail`, `sapsii`, `sepsis3`, `vasoactive_agent`, and `ventilation`.
 
-MIMIC-IV v3.0 is the clinical database release and is not evidence of MIMIC Code v3.0.0. No current upstream `HEAD` is presented as the historical build. The upstream definition SQL is not redistributed, historical local modifications cannot be assessed, and byte-for-byte reconstruction of the derived schema is not claimed. See `docs/upstream_schema_provenance.md`.
+MIMIC-IV v3.1 is the clinical database release and is not evidence of any MIMIC Code tag or commit, including MIMIC Code v3.0.0. No current upstream `HEAD` is presented as the historical build. The upstream definition SQL is not redistributed, historical local modifications cannot be assessed, and byte-for-byte reconstruction of the derived schema is not claimed. See `docs/upstream_schema_provenance.md`.
 
 Several R scripts create or read protected `.rds` objects under `data/processed/` or `data/interim/`. Those objects can contain completed patient-level data, profile assignments, or fitted parameters and are deliberately excluded. Authorized users can regenerate them locally by following `docs/analysis_workflow.md`. They must not commit, upload, or share them.
 
@@ -151,5 +153,5 @@ The MIT License does not cover MIMIC-IV or eICU-CRD data, externally maintained 
 
 ## Public availability
 
-The source is published at `https://github.com/wangtao304/solid-tumor-sepsis-profiles`. Version 1.0.0 is the fixed release supporting the revised manuscript. The release does not include patient-level data, completed imputations, trained or fitted model objects, or protected database-derived artifacts.
+The source is published at `https://github.com/wangtao304/solid-tumor-sepsis-profiles`. Version 1.0.1 is the current fixed release supporting the revised manuscript; v1.0.0 remains preserved as the original release. The release does not include patient-level data, completed imputations, trained or fitted model objects, or protected database-derived artifacts.
 

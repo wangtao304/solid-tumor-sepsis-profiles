@@ -2,7 +2,7 @@
 
 ## Scope and execution boundary
 
-This document maps the actual source chain supporting the R1F manuscript. It is not an instruction to run clinical analyses outside an approved environment. Database access, patient-level in-memory linkage, and protected object generation require the user's own authorization and credentials. The v1.0.0 public source release contains no input data or fitted object.
+This document maps the actual source chain supporting the R1F manuscript. It is not an instruction to run clinical analyses outside an approved environment. Database access, patient-level in-memory linkage, and protected object generation require the user's own authorization and credentials. The v1.0.1 public source release contains no input data or fitted object.
 
 Run scripts from the package root. Do not write patient-level SQL output to disk. Aggregate exports belong under `outputs/`; protected objects belong under ignored `data/processed/` or `data/interim/` paths.
 
